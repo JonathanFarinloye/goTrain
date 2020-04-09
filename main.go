@@ -7,8 +7,21 @@ import (
 )
 
 func main() {
-	jobs := []int {100, 150, 50, 20}
-	fixedPartition(jobs)
+	jobs := []int {100, 250, 50, 20}
+	// fixedPartition(jobs)
+	fmt.Println(dynamicPartition(jobs, 300))
+}
+
+
+func dynamicPartition(jobs []int, memory int) []int {
+	blockView := []int {}
+	for _, value := range jobs {
+		if value <= memory {
+			memory -= value
+			blockView = append(blockView, value)
+		}
+	}
+	return blockView
 }
 
 
