@@ -1,0 +1,58 @@
+// package main
+
+// func dataTypes()  {
+// 	var (
+// 		// integer
+// 		age int = 20
+// 		// string
+// 		name string = "Jonathan Farinloye"
+// 		// boolean
+// 		male bool = true
+// 		female bool = false
+
+// 		// arrays - Fixed sizes
+// 		details = [2]string {"Random Stuff", "Grow up"}
+// 		// or
+// 		// size is deduced from the elements in the curly braces
+// 		details2 = [...]int {1, 3, 4, 5}
+// 		// or
+// 		details3 [3]int
+
+// 		// slices - basically mutable arrays
+// 		creatures = []string {"fish", "bugs"}
+// 		// or making a slice of a certain length without populating it
+// 			// Below creates a slice of length without populating it
+// 		oceans = make([]string, 3) 
+// 		// Creating a slice of certain length with preallocated capacity
+// 			// Creates a zeroed slice of length 3 and capacity of 5
+// 		seas = make([]string, 3, 5)
+
+// 		// Slicing an array
+// 			// array[firstIndex:secondIndex] where secondIndex = firstIndex + lengthOfSlice (or stopping index??)
+		
+// 		newDetails = details2[0:3]
+// 		// newDetails would be [1, 3, 4]
+// 			// If startting from the beginning the firstIndex can be ignored like details2[:3]
+// 			// To include all items after a point the secondIndex can be ignored like detials[1:]
+
+// 		// When converting an array to a slice we could just ignore all the numbers like
+// 		newDetails2 = details2[:]
+
+// 		// Multidimensional slices
+
+// 		riverNames = [][]string {{"hdf", "uihsfo", "uisuhfin"},{"uiosf", "oisoif", "sfsk"}}
+
+// 	)
+// 	// To add new elements to a slice use append
+// 	oceans = append(oceans, "at")
+
+// 	// When appending 2 slices, do oceans = append(oceans, slice2...)
+// 	// To remove elements from a slice we basically have to slice them out, appending the 2 slices
+// 	// E.G. to remove element at i; slice = append(slice[:i], slice[i+1:]...)
+// 	oceans = append(oceans[:1], oceans[2:]...)
+// 	// use cap(slice) to find the capacity of a slice
+
+// 	// constant
+// 	const father string = "Sogo"
+
+// }
